@@ -7,6 +7,7 @@ class UnitTests(unittest.TestCase):
         actual = password_cracker.crack_sha1_hash(
             "18c28604dd31094a8d69dae60f1bcd347f1afc5a")
         expected = "superman"
+
         self.assertEqual(
             actual, expected,
             'Expected function to return "superman" from hash "18c28604dd31094a8d69dae60f1bcd347f1afc5a".'
@@ -43,6 +44,7 @@ class UnitTests(unittest.TestCase):
         actual = password_cracker.crack_sha1_hash(
             "53d8b3dc9d39f0184144674e310185e41a87ffd5", use_salts=True)
         expected = "superman"
+        
         self.assertEqual(
             actual, expected,
             'Expected function to return "superman" from hash "53d8b3dc9d39f0184144674e310185e41a87ffd5".'
